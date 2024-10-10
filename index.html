@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="container" id="initialText">
+            <h1>Enter Your Date Of Birth</h1>
+            <input type="date" id="dobInput" />
+            <button id="dobButton">Add DOB</button>
+        </div>
+        <div class="container hide" id="afterDOBBtnTxt">
+            <h1>Your Life Journey</h1>
+            <div class="time-container">
+                <h2><span id="year">0</span> Years</h2>
+                <h2><span id="month">0</span> Months</h2>
+                <h2><span id="day">0</span> Days</h2>
+                <h2><span id="hour">0</span> Hours</h2>
+                <h2><span id="minute">0</span> Minutes</h2>
+                <h2><span id="second">0</span> Seconds</h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

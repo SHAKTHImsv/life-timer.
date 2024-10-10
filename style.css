@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: "Oswald", sans-serif;
+    background-image: url("mountain.jpg"); /* Background image on the body */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height for the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 90%; /* Allow for smaller screens */
+    width: 600px; /* Set a fixed width for larger screens */
+    background: transparent /* Slightly transparent background */
+}
+
+.container h1 {
+    font-size: 2.5rem; /* Responsive font size */
+    color: white;
+}
+
+.container input {
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    outline: none;
+    padding: 0 10px; /* Add padding for input */
+    font-size: 1rem; /* Responsive font size */
+}
+
+.container button {
+    display: block;
+    margin: 20px auto;
+    align-items: center;
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1rem; /* Responsive font size */
+}
+
+.container button:hover {
+    cursor: pointer;
+}
+
+.time-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column; /* Stack items on smaller screens */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-container h2 {
+    line-height: 60px;
+    text-align: center;
+    font-size: 2rem; /* Responsive font size */
+    color: white;
+}
+
+.time-container span {
+    font-size: 3rem; /* Responsive font size */
+    color: white; /* Changed to black for contrast */
+}
+
+.hide {
+    display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 2rem; /* Smaller font for mobile */
+    }
+
+    .time-container h2 {
+        font-size: 1.5rem; /* Smaller font for mobile */
+    }
+
+    .time-container span {
+        font-size: 2.5rem; /* Smaller font for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 1.5rem; /* Further decrease for small screens */
+    }
+
+    .container input, .container button {
+        width: 100%; /* Full width for small screens */
+    }
+}
